@@ -8,4 +8,10 @@
 5.主要的4个界面是使用Fragment和ViewPager完成的，笔记列表和新闻列表使用了ListView  
 6.新闻是自己上传到Tomcat里的，请求网络使用的是okHttp技术,图片的显示使用了Glide  
 7.实现图片：  
-![Image text]()
+![Image text](https://github.com/Hello-Yuan/img-storage/blob/main/img/login.png)
+![Image text](https://github.com/Hello-Yuan/img-storage/blob/main/img/register.png)
+![Image text](https://github.com/Hello-Yuan/img-storage/blob/main/img/page_1.png)
+![Image text](https://github.com/Hello-Yuan/img-storage/blob/main/img/page_2.png)
+![Image text](https://github.com/Hello-Yuan/img-storage/blob/main/img/page_3.png)
+![Image text](https://github.com/Hello-Yuan/img-storage/blob/main/img/page_4.png)
+
