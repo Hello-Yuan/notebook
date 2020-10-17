@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_npass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新密码："
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/et_npass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_npass"
+        android:layout_alignLeft="@+id/et_npass_sec"
+        android:layout_alignBaseline="@+id/tv_npass"
+        android:hint="输入新密码"
+        android:inputType="textPassword"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/tv_npass_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_npass"
+        android:layout_marginTop="20dp"
+        android:text="确认新密码："
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/et_npass_sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_npass_sec"
+        android:layout_alignBaseline="@+id/tv_npass_sec"
+        android:inputType="textPassword"
+        android:hint="输入新密码"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/btn_npass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_npass_sec"
+        android:layout_marginTop="20dp"
+        android:text="确认修改"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:background="@drawable/btn_shape2"/>
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:paddingBottom="50dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_register"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:textSize="55sp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_input"
+        android:layout_marginTop="100dp">
+        <TextView
+            android:id="@+id/login_username"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="账号："
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="25sp"/>
+        <EditText
+            android:id="@+id/et_user"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:hint="请输入账号" />
+    </LinearLayout>
+    <!--  android:background="@null"-->
+    <!--去掉下划线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_input"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/login_password"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="密码："
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="25sp"/>
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_weight="6.5"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:hint="请输入密码"/>
+
+        <CheckBox
+            android:id="@+id/ck_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/password_selector"
+            android:layout_gravity="center"
+            android:checked="false"/>
+    </LinearLayout>
+
+
+
+    <!--功能按钮-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:background="@drawable/btn_shape"/>
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:text="注册"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_shape"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
